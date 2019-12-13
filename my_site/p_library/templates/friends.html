@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Друзья, занявшие книги {% endblock title %}</title>
+<table class="table">
+    <thead class="thead">
+        <tr>
+            <th>#</th>
+            <th>Имя друга</th>
+            <th>Книги, которые он занял</th>
+    </thead>
+    {% for key, values in friends.items %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ key }}</td>
+        <td>
+            {% for value in values %}
+            {{ value }} <br>
+            {% endfor %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
