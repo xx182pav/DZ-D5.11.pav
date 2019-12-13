@@ -1,3 +1,3 @@
-1.В директории my_site набрать команду python manage.py runserver (cmd).
+1.В(cmd) директории my_site набрать команду python manage.py runserve.
 2 Перейти по адресу http://127.0.0.1:8000/admin
 3 Django administration username:Andrey, pasword:9977affa
